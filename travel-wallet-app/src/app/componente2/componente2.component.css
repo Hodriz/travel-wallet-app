@@ -1,16 +1,11 @@
+/* CSS para o retângulo translúcido */
+.overlay {
+  background-color: rgba(240, 232, 232, 0.774); /* Cor de fundo com transparência */
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+}
 
-.holder {
-    display: flex;
-    justify-content: center;
-    margin-left: 1rem;
-    
-}
-.imagem {
- 
-  margin: 8px;
-  padding-left: 1%;
-  position: relative;
-  text-align: center;
-  width: auto;
-  height: auto;
-}
+

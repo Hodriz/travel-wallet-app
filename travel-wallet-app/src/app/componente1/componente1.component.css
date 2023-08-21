@@ -1,0 +1,15 @@
+.fundo{
+    background-color: f29f05;
+}
+
+.icon {
+    font-size: 24px;
+    cursor: pointer; 
+    background-size:10%;
+    width: 10px;
+    height: auto;
+  }
+
+  .botao{
+    background-color: #f27405;
+  }
