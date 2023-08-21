@@ -33,3 +33,7 @@ https://github.com/Hodriz/TravelWallet
 - [] Usar a diretiva ngIf
 - [] Formatar a apresentação de dados com Pipes.
 - [] Build e deploy da aplicação.
+
+link do protótipo da tela:
+
+https://www.figma.com/file/yLSVOMzC4LZ1aEfcvXNhip/Untitled?type=design&node-id=3%3A57&mode=design&t=s49t7DNrTHdzI2Zx-1
