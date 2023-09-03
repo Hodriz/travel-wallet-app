@@ -1,0 +1,22 @@
+<div class="div-retangular">
+<form (submit)="cadastrarUsuario()" #form="ngForm">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" [(ngModel)]="usuario.nome" required />
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" [(ngModel)]="usuario.email"required
+    required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" /><br>
+    
+    <button rows="4" cols="50" class="btn-group btn-group-justified" type="submit"  [disabled]="form.invalid">Enviar</button><br>
+    <textarea class="area" rows="4" cols="68"></textarea>
+    <div *ngIf="form.controls['email'].invalid && (form.controls['email'].dirty || form.controls['email'].touched)">
+        <p class="error-message">Email inválido.</p>
+    </div>
+    <div *ngIf="cadastroConcluido" class="alert alert-success">
+        <p>Cadastro realizado com sucesso!</p>
+    </div>
+</form>
+  
+</div>
+
+  

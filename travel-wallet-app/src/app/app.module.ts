@@ -12,6 +12,7 @@ import { ConversorMoedaComponent } from './conversor-moeda/conversor-moeda.compo
 import { ChecklistGastosComponent } from './checklist-gastos/checklist-gastos.component';
 import { CombustivelGastosComponent } from './combustivel-gastos/combustivel-gastos.component';
 import { ComponenteHeaderComponent } from './componente-header/componente-header.component';
+import { FaleConoscoComponent } from './fale-conosco/fale-conosco.component';
 
 
 
@@ -24,7 +25,8 @@ import { ComponenteHeaderComponent } from './componente-header/componente-header
     ChecklistGastosComponent,
     CombustivelGastosComponent,
     ConversorMoedaComponent,
-    ComponenteHeaderComponent
+    ComponenteHeaderComponent,
+    FaleConoscoComponent
   ],
   imports: [
     BrowserModule,
