@@ -1,0 +1,28 @@
+
+<app-componente2 [gasolina]="resultadoGasolina" 
+[alcool]="resultadoAlcool"
+[diesel]="resultadoDiesel" ></app-componente2>
+<div class="div-retangular">
+  <div>
+  <i class="fa fa-align-center" aria-hidden="true">Gasto com combustivel</i>
+  </div>
+  <form>
+    <label>Distância do Trajeto (km):</label>
+    <input type="number" [(ngModel)]="distancia" [ngModelOptions]="{standalone: true}" />
+  
+    <label>Consumo Médio (km/l):</label>
+    <input type="number" [(ngModel)]="consumoMedio" [ngModelOptions]="{standalone: true}"/><br>
+  
+    <label>Preço do Álcool:</label>
+    <input type="number" [(ngModel)]="precoAlcool" [ngModelOptions]="{standalone: true}"/><br>
+  
+    <label>Preço do Diesel:</label>
+    <input type="number" [(ngModel)]="precoDiesel" [ngModelOptions]="{standalone: true}"/><br>
+  
+    <label>Preço da Gasolina:</label>
+    <input type="number" [(ngModel)]="precoGasolina" [ngModelOptions]="{standalone: true}"/><br>
+  
+    <button type="button" (click)="calcular()">Calcular</button>
+  </form>
+
+</div>

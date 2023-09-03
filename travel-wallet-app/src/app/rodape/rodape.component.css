@@ -1,9 +1,11 @@
 /* src/app/footer/footer.component.css */
 .rodape {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: #f27405;
     color: white;
     text-align: center;
-    padding: 2%;
-    
   }
-  
+ 
