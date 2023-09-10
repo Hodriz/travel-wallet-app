@@ -1,6 +1,5 @@
 
 <div class="div-retangular">
-    <script src="script.js"></script>
     <h1>Moeda Real</h1>
     <label for="numero">Quantos reais você têm:</label>
     <input type="number" [(ngModel)]="reais" [ngModelOptions]="{standalone: true}"><br>
@@ -8,17 +7,18 @@
     <input type="number" [(ngModel)]="outraMoeda" [ngModelOptions]="{standalone: true}">
     <button type="button" (click)="dividir()">Calcular</button>
     <button type="button" (click)="enviar()">enviar checklist</button>
- 
     <div *ngIf="resultado">
         <h3>Resultado:</h3>
         <p>{{ reais }} R$ / {{ outraMoeda }} = {{ resultado.toFixed(2) }} na moeda escolhida</p>
     </div>
     
-    <h3>Cotação do Dolar</h3>
-    <h2 id="dado"></h2>
-    <h3>Cotação do Euro</h3>
-    <h2 id="dado2"></h2>
-   
+    <div *ngIf="realDolar">
+        <h2>Cotação Atual USD-BRL</h2>
+        <p>Valor: R$ {{ realDolar }}</p>
+        <h2>Cotação Atual EUR-BRL</h2>
+        <p>Valor: R$ {{ realEuro }}</p>
+    </div>
+
 </div>
 
 

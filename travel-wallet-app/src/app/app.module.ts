@@ -13,7 +13,7 @@ import { ChecklistGastosComponent } from './checklist-gastos/checklist-gastos.co
 import { CombustivelGastosComponent } from './combustivel-gastos/combustivel-gastos.component';
 import { ComponenteHeaderComponent } from './componente-header/componente-header.component';
 import { FaleConoscoComponent } from './fale-conosco/fale-conosco.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -31,8 +31,8 @@ import { FaleConoscoComponent } from './fale-conosco/fale-conosco.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
-  
+    FormsModule,
+    HttpClientModule,
   ],
   exports: [
     ConversorMoedaComponent
