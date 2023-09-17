@@ -5,7 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-fale-conosco',
+  selector: 'app-fale-conosco',                                  
   templateUrl: './fale-conosco.component.html',
   styleUrls: ['./fale-conosco.component.css']
 })
@@ -19,13 +19,14 @@ export class FaleConoscoComponent{
   comentarios:string[] = [];
   comentariosTexto:string="";
   comentarioId:any;
+  emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
 
 
 constructor(private route: ActivatedRoute, private formBuilder: FormBuilder,
   private apiService: ApiService, private router:Router ){
     this.formulario = this.formBuilder.group({
       nome: ['', Validators.required],
-      email: ['',[Validators.required, Validators.email]],
+      email: ['',[Validators.required, Validators.pattern(this.emailRegex)]],
       post: ['',Validators.required],  
   });
   }
@@ -45,6 +46,7 @@ cadastrarComentario() {
   const comentario = this.formulario.value as FaleConoscoComponent;
   this.apiService.enviarComentario(comentario).subscribe(() => {
     console.log('Comentário enviado com sucesso!');
+    this.cadastroConcluido=true;
     this.formulario.reset();
   }, (error) => {
     console.error('Erro ao enviar o comentário:', error);

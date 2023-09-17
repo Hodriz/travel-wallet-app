@@ -1,14 +1,14 @@
 <div class="div-retangular">
-<form [formGroup]="formulario" (ngSubmit)="cadastrarComentario()" #form="ngForm" >
+<form [formGroup]="formulario" (ngSubmit)="cadastrarComentario()" #form="ngForm"  >
     
     <label for="nome">Nome:</label>
     <input type="text" id="nome" formControlName="nome" />
   
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" formControlName="email"required
-    required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" /><br>
-    
-    <button rows="4" cols="50" class="btn-group btn-group-justified" type="submit">Enviar</button><br>
+    <input type="email" id="email" name="email" formControlName="email"required /><br>
+
+    <button rows="4" cols="50" class="btn-group btn-group-justified" type="submit"
+    [disabled]="formulario.invalid">Enviar</button><br>
     <textarea class="area" rows="4" cols="68" id="post" formControlName="post">{{comentarios}}</textarea>
    
     <div *ngIf="cadastroConcluido" class="alert alert-success">
