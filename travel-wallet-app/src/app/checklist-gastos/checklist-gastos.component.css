@@ -1,6 +1,7 @@
 .div-retangular {
-  width: 500px;
-  height: 250px;
+  width: 40%;
+  height: 50%;
+  padding: 2%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -8,6 +9,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: rgba(240, 232, 232, 0.7);
 }
 
   

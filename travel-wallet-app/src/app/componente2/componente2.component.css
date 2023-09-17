@@ -1,6 +1,6 @@
 
 .overlay {
-  background-color: rgba(240, 232, 232, 0.212); /* Cor de fundo com transparência */
+  background-color: rgba(240, 232, 232, 0.7); /* Cor de fundo com transparência */
   position: absolute;
   top: 15%;
   left: 15%;

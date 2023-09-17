@@ -14,6 +14,7 @@ import { CombustivelGastosComponent } from './combustivel-gastos/combustivel-gas
 import { ComponenteHeaderComponent } from './componente-header/componente-header.component';
 import { FaleConoscoComponent } from './fale-conosco/fale-conosco.component';
 import { HttpClientModule } from '@angular/common/http';
+import { InicioComponent } from './inicio/inicio.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     CombustivelGastosComponent,
     ConversorMoedaComponent,
     ComponenteHeaderComponent,
-    FaleConoscoComponent
+    FaleConoscoComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,

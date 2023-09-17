@@ -1,13 +1,15 @@
 .div-retangular {
-    width: 37%;
-    height: 250px;
+    width: 45%;
+    height:auto;
     margin-left: auto;
     margin-right: auto;
     display: block;
     position: absolute;
+    padding: 3%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: rgba(240, 232, 232, 0.7);
   }
 
   .botao {
