@@ -14,9 +14,9 @@
     
     <div *ngIf="realDolar">
         <h2>Cotação Atual USD-BRL</h2>
-        <p>Valor: R$ {{ realDolar }}</p>
+        <p>Valor:{{ realDolar | currency: "BRL"}}</p>
         <h2>Cotação Atual EUR-BRL</h2>
-        <p>Valor: R$ {{ realEuro }}</p>
+        <p>Valor:{{ realEuro | currency: "BRL" }}</p>
     </div>
 
 </div>

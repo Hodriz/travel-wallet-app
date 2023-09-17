@@ -10,10 +10,11 @@
     <button rows="4" cols="50" class="btn-group btn-group-justified" type="submit"
     [disabled]="formulario.invalid">Enviar</button><br>
     <textarea class="area" rows="4" cols="68" id="post" formControlName="post">{{comentarios}}</textarea>
-   
-    <div *ngIf="cadastroConcluido" class="alert alert-success">
-        <p>Cadastro realizado com sucesso!</p>
+    <div class="area" *ngFor="let comentario of comentarios">
+      <p>{{ comentario }}</p>
     </div>
+   
+  
 </form>
 <label for="id" cols="3">ID:</label>
 <input type="number" [(ngModel)]="id" [ngModelOptions]="{standalone: true}"/><br>
@@ -21,10 +22,9 @@
 <button (click)="buscarComentarioPorId()">Pegar comentário pelo ID</button>
 <button (click)="carregarComentarios()">Mostrar todos os comentários</button>
 <button (click)="updateComentario()">Atualizar</button>
-
-  <textarea class="formulario" rows="4" cols="80">{{comentariosTexto}}
-  </textarea>
-
+<div *ngIf="cadastroConcluido" class="alert alert-success">
+  <p>Cadastro realizado com sucesso!</p>
+</div>
 
 </div>
 
