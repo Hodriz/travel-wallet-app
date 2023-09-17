@@ -1,28 +1,10 @@
 {
-  "usuario": [
+  "posts": [
     {
-      "id": 1,
-      "nome": "nome",
-      "email": "exemplo@gmail.com",
-      "cometario": "cometario1"
-    },
-    {
-      "nome": "Silvio Santos",
-      "email": "patrao@sbt.com",
-      "cometario": "Má oii!",
-      "id": 2
-    },
-    {
-      "nome": "Luiz Inacio",
-      "email": "paidosprobi@cadeia.gov",
-      "cometario": "Eu sou a alma mais pura do Brasil!",
-      "id": 3
-    },
-    {
-      "nome": "Jair Bolsonaro",
-      "email": "rachadinha@guartel.mil",
-      "cometario": "tá ok!?",
-      "id": 4
+      "nome": "teste de quinta",
+      "email": "teste@testedequinta.com.br",
+      "post": "sasasdasd",
+      "id": 5
     }
   ]
 }

@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'pgChecklistGastos/:money', component:  ChecklistGastosComponent},
   { path: 'pgCombustivelGastos', component:  CombustivelGastosComponent},
   { path: 'pgFaleConosco', component:  FaleConoscoComponent},
+  { path: 'posts/:id', component:  FaleConoscoComponent},
 ];
 
 @NgModule({

@@ -17,4 +17,23 @@
   .area{
     resize: none;
   }
-  
+
+  /* Estilo para o formulário */
+.formulario {
+  position: absolute; /* Posição absoluta em relação ao viewport */
+  top: 0; /* Alinhar o topo do formulário com o topo da tela */
+  right: -70%; /* Alinhar a borda direita do formulário com a borda direita da tela */
+  width: 300px; /* Largura desejada para o formulário */
+  height: 100%; /* Altura igual à altura da tela */
+  padding: 20px; /* Espaçamento interno para afastar o conteúdo das bordas */
+  background-color: #f0f0f0; /* Cor de fundo opcional */
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+}
+
+/* Estilo para o textarea dentro do formulário */
+.formulario textarea {
+  width: 100%; /* Ocupar toda a largura do formulário */
+  height: 100%; /* Ocupar toda a altura do formulário */
+  border: none; /* Remover borda padrão do textarea */
+  resize: none; /* Impedir redimensionamento do textarea */
+}
