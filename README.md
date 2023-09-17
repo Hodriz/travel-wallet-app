@@ -37,3 +37,7 @@ https://github.com/Hodriz/TravelWallet
 link do protótipo da tela:
 
 https://www.figma.com/file/yLSVOMzC4LZ1aEfcvXNhip/Untitled?type=design&node-id=3%3A57&mode=design&t=s49t7DNrTHdzI2Zx-1
+
+link do site no GitPages
+
+https://hodriz.github.io/travel-wallet-app/
